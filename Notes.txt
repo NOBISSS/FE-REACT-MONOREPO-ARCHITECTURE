@@ -1,0 +1,22 @@
+React Application (MONO REPO ARCHITECTURE)
+Setting up pnpm :
+    1.Creating pnpm-workspace.yaml
+    2.writing corresponding folder names according to package use mg
+    3.creating 2 folders i)app,ii)packages
+
+Setting up lerna:
+    1.cmd-
+        pnpm add -Dw lerna
+        drilling command:
+            -D : means DevDependecies
+             w : means workspace level (Global level where you can use that package in any folder)
+    2.cmd :
+        npx lerna init
+
+3.Package.json changes:
+    -Add packageManager key value add pnpm version
+    -Also add Scripts like dev,build,lint
+
+4.Installing React App in app folder
+    -command:
+        pnpm create vite apps/customer-portal --template react-ts
