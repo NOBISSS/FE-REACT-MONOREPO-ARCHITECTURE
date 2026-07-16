@@ -1,10 +1,11 @@
 import { Button } from "@repo/ui";
+import {formatCurrency} from "@repo/utils";
 function App() {
 
   return (
     <>  
       <h1>Complete Frontend Dev and Deployment Lifecycle</h1>
-      <Button onClick={()=>alert("Hello!!,Good Morning")}/>
+      <Button onClick={()=>alert(formatCurrency(1234))}/>
     </>
   )
 }

@@ -5,13 +5,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"lerna run dev --parellel",
-    "build":"lerna run build",
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint"
   },
   "license": "ISC",
   "devDependencies": {
     "lerna": "^9.0.7"
+  },
+  "dependencies": {
+    "@repo/eslint-config": "workspace:^",
+    "@repo/utils": "workspace:*",
+    "customer-portal": "^1.0.8"
   }
 }
